@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Ingreso de datos del vehículo
+        // Datos de entrada del vehiculo
         System.out.println("=== Sistema de Impuesto Vehicular ===");
         System.out.print("Ingrese la marca del vehículo: ");
         String marca = sc.nextLine();
@@ -21,7 +21,7 @@ public class Main {
         Vehiculo vehiculo = new Vehiculo(marca, linea, modelo, valorComercial);
         Impuesto impuesto = new Impuesto(vehiculo);
 
-        // ===== Selección de descuentos =====
+        // Descuentos
         double porcentajeProntoPago = 0;
         double porcentajeTraslado = 0;
 
